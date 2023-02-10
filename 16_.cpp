@@ -1,19 +1,14 @@
 #include<iostream>
-#include<conio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    int side,area;
-    public:
-    void sqire(){
-        cout<<"Enter Side of squire :";
-        cin>>side;
-        area=side*side;
-        cout<<"Area of sqire :"<<area;
-    }
-};
-int main(){
-    A obj;
-    obj.sqire();
+int main()
+{
+    bool flag=true;
+    cout<<boolalpha;
+    cout<<"\n setting boolalpha \n";
+    cout<<"\n Flag value ="<<flag;
+    cout<<"\n setting noboolalpha \n";
+    cout<<noboolalpha;
+    cout<<"\n flag value ="<<flag;
     
 }

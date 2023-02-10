@@ -1,28 +1,18 @@
 #include<iostream>
-#include<conio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    char ch;
-    public:
-    void input(){
-        cout<<"Enter Chatrecter :";
-        cin>>ch;
-    }
-    void show(){
-        if(ch>='a' && ch<='z'){
-            ch=ch-32;
-            cout<<ch;
 
-        }
-        else{
-            ch=ch+32;
-            cout<<ch;
-        }
-    }
-};
-int main(){
-    A obj;
-    obj.input();
-    obj.show();
+int main()
+{
+    int num;
+    cout<<"Enter a num :\n";
+    cin>>num;
+    cout<<"Default Display Decimal="<<num<<"\n";
+    cout.setf(ios::oct,ios::basefield);
+    cout<<"Octal ="<<num<<"\n";
+    cout.setf(ios::hex,ios::basefield);
+    cout<<"Hexa="<<num<<"\n";
+    cout.setf(ios::dec,ios::basefield);
+    cout<<"Decimal="<<num<<"\n";
+    
 }

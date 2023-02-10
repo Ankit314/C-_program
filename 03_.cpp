@@ -1,22 +1,16 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
-class A{
-    private:
-    int n,i,r;
-    public:
-    void Table(){
-        cout<<"Enter Any Number :";
-        cin>>n;
-        for(i=1;i<=10;i++){
-            r=n*i;
-            cout<<n<<"*"<<i<<" ="<<r<<endl;
-
-        }
-    }
-};
-int main(){
-    A obj;
-    obj.Table();
-
+int main()
+{
+    int num=3;
+    cout<<"Number :"<<num<<"\n";
+    char name='A';
+    cout<<"Charecter :"<<name<<"\n";
+    float dec=45.678;
+    cout<<"Float :"<<dec;
 }
+
+
+
+
+               

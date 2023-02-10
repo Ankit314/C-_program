@@ -1,22 +1,21 @@
 #include<iostream>
-#include<conio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    int l,b,area;
-    public:
-    void input(){
-        cout<<"Enter Length and Bridth of Rectangale :";
-        cin>>l>>b;
-        area=l*b;
-        cout<<"Area of rectangale :"<<area;
-    }
-
-
-};
-int main(){
-    A obj;
-    obj.input();
+int main()
+{
+    int num;
+    cout<<"Enter a Num :";
+    cin>>num;
+    cout.setf(ios::showbase);
+    cout.setf(ios::hex,ios::basefield);
+    cout<<"Hexadecimal="<<num<<"\n";
+    cout.setf(ios::uppercase | ios::basefield);
+    cout.setf(ios::hex,ios::basefield);
+    cout<<"Hexadecimal="<<num<<"\n";
+    cout<<nouppercase;
+    cout<<"Calling nouppercase format :"<<endl;
+    cout.setf(ios::hex,ios::basefield);
+    cout<<"Hexadecimal="<<num<<"\n";
     
-}
 
+}

@@ -3,8 +3,9 @@
 using namespace std;
 int main()
 {
-int number=321;
-cout<<'\"'<<"number="<<number<<ends;
-cout<<'\"'<<endl;
-
+    int a,b;
+    a=200;
+    b=300;
+    cout<<a<<'\t'<<b<<endl;
+        
 }

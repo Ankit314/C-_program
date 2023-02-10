@@ -1,26 +1,13 @@
 #include<iostream>
-#include<conio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    int a,b;
-    public:
-    void input(){
-        cout<<"Enter Two Number :\n";
-        cin>>a>>b;
-        cout<<"Before Swap :"<<" a= "<<a<<" b=  "  <<b;
-    }
-    void show(){
-        a=a+b;
-        b=a-b;
-        a=a-b;
-        cout<<"\n After swaping :";
-        cout<<"a= "<<a<<"b= "<<b;
-    }
-};
-int main(){
-    A obj;
-    obj.input();
-    obj.show();
-
+int main()
+{
+    int value;
+    cout<<"Enter a num :"<<endl;
+    cin>>value;
+    cout<<"Decimal base ="<<setbase(10) <<value<<endl;
+    cout<<"Hexadecimal base ="<<setbase(16) <<value<<endl;
+    cout<<"Octal base="<<setbase(8) <<value<<endl;
+    
 }

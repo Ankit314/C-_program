@@ -1,28 +1,15 @@
 #include<iostream>
-#include<stdio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    int n;
-    public:
-    void input(){
-        cout<<"Enter a number :";
-        cin>>n;
-
-    }
-    void show(){
-        if(n%7==0||n%10==7){
-            cout<<"Number is Buzz :";
-        }
-        else{
-            cout<<"Number is Not Buzz :";
-        }
-    }
-
-};
-int main(){
-    A obj;
-    obj.input();
-    obj.show();
-
+int main()
+{
+    double a,b,c,d;
+    a=1.23456789;
+    b=34.56;
+    c=1.34E5;
+    d=-123.56789;
+    cout<<"a="<<a<<"\n";
+    cout<<"b="<<b<<"\n";
+    cout<<"c="<c<<"\n";
+    cout<<"d="<<d<<"\n";
 }

@@ -1,23 +1,17 @@
 #include<iostream>
-#include<conio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    int n;
-    public:
-    void input(){
-        cout<<"Enter a Number :";
-        cin>>n;
+int main()
+{
+    float a,b,c;
+    a=5;
+    b=3;
+    c=a/b;
+    cout<<setprecision(1)<<c<<endl;
+    cout<<setprecision(2)<<c<<endl;
+    cout<<setprecision(3)<<c<<endl;
+    cout<<setprecision(4)<<c<<endl;
+    cout<<setprecision(5)<<c<<endl;
+    cout<<setprecision(6)<<c<<endl;
 
-    }
-    void show(){
-        for(int i=1;i<=n;i++){
-            cout<<"\nNatural Number : "<<i;
-        }
-    }
-};
-int main(){
-    A obj;
-    obj.input();
-    obj.show();
 }

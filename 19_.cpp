@@ -1,36 +1,21 @@
 #include<iostream>
-#include<conio.h>
+#include<iomanip>
 using namespace std;
-class A{
-    private:
-    int a,c,s=0,r;
-    public:
-    void palindrom(){
-        cout<<"Enter a Number :";
-        cin>>a;
-        
-    }
-    void show(){
-        c=a;
-        while(a>0){
-            r=a%10;
-            s=(s*10)+r;
-            a=a/10;
-
-
-
-
-        }
-        if(c==s){
-            cout<<"Number is Pallindrom :";
-        }else{
-            cout<<"Number is Not pallindrm :";
-        }
-    }
-};
-int main(){
-    A obj;
-    obj.palindrom();
-    obj.show();
-
+int main()
+{
+    int num;
+    cout<<"Enter a number :";
+    cin>>num;
+    cout.setf(ios::showbase);
+    cout.setf(ios::showpos);
+    cout.setf(ios::oct,ios::basefield);
+    cout<<"Octal="<<num<<"\n";
+    cout.setf(ios::hex,ios::basefield);
+    cout<<"Hexa nu ="<<num<<"\n";
+    cout.setf(ios::dec,ios::basefield);
+    cout<<"Decimal="<<num<<"\n";
+    cout<<"Calling noshowpos format flag\n";
+    cout<<noshowpos;
+    cout<<"Decimal="<<num<<"\n";
+    
 }
